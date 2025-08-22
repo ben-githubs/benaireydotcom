@@ -1,0 +1,62 @@
+{% extends "basic_content.jinja2" %}
+
+{% block content %}
+    <h1 class="center panel">Sounds of Ben</h1>
+    <div class="panel">
+        Everywhere I go, I hear the sounds... If you wish to share in my burden, explore the image below.
+    </div>
+    <div class="panel" style="height: 550px; background-image: url('static/sprites/trumpet-boy.jpg'); background-size: cover; background-position: center;">
+        <div class="sound-button" style="width: 230px; height: 140px; top: 120px; left: 35px;">
+            <!-- <audio><source src="static/sounds/say-hello-to-my-little-friend.mp3" type="audio/mpeg"></audio> -->
+            <audio><source src="static/sounds/its-big-brain-time-markiplier.mp3" type="audio/mpeg"></audio>
+            <!-- <audio><source src="static/sounds/say-my-name.mp3" type="audio/mpeg"></audio> -->
+            <!-- <audio><source src="static/sounds/wololo.mp3" type="audio/mpeg"></audio> -->
+        </div>
+        <div class="sound-button" style="width: 150px; height: 230px; top: 290px; left: 70px;">
+            <audio><source src="static/sounds/emotional-damage-meme.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width:  90px; height: 230px; top: 290px; left: 360px;">
+            <audio><source src="static/sounds/yee.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width: 150px; height: 220px; top: 310px; left: 475px;">
+            <audio><source src="static/sounds/now-thats-a-lot-of-damage.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width: 130px; height: 250px; top: 280px; left: 680px;">
+            <audio><source src="static/sounds/oh-hell-no_aQX7VTp.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width: 120px; height: 280px; top: 250px; left: 810px;">
+            <audio><source src="static/sounds/wow-anime-voice-accent.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width: 180px; height: 210px; top:  25px; left: 690px;">
+            <audio><source src="static/sounds/doot-doot-1.mp3" type="audio/mpeg"></audio>
+            <audio><source src="static/sounds/doot-doot-2.mp3" type="audio/mpeg"></audio>
+            <audio><source src="static/sounds/doot-doot-3.mp3" type="audio/mpeg"></audio>
+            <audio><source src="static/sounds/doot-doot-4.mp3" type="audio/mpeg"></audio>
+            <audio><source src="static/sounds/doot-doot-5.mp3" type="audio/mpeg"></audio>
+            <audio><source src="static/sounds/doot-doot-6.mp3" type="audio/mpeg"></audio>
+            <audio><source src="static/sounds/doot-me-up-inside.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width: 210px; height: 230px; top:  30px; left: 400px;">
+            <audio><source src="static/sounds/why-is-it-spicy.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width: 30px; height: 30px; top:  175px; left: 295px;">
+            <audio><source src="static/sounds/not-the-bees.mp3" type="audio/mpeg"></audio>
+        </div>
+    </div>
+{% endblock %}
+
+{% block post_content %}
+    <script>
+        document.querySelectorAll(".sound-button").forEach(button => {
+            button.addEventListener("click", () => {
+                // Get all audio elements in this button
+                const audioElements = button.querySelectorAll("audio");
+                if (audioElements.length > 0) {
+                    // Select a random audio element and play it
+                    const randomIndex = Math.floor(Math.random() * audioElements.length);
+                    audioElements[randomIndex].play();
+                }
+            });
+        });
+    </script>
+{% endblock %}

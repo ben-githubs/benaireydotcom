@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css">
+    
+</head>
+
+<body>
+    <div class="content">
+        <div class="navbar panel">
+            <a class="block" href="index.html">Homepage</a>
+            <a class="block" href="fun_facts.html">Fun Ben Facts</a>
+            <a class="block" href="portfolio.html">Ben's Portfolio</a>
+            <a class="block" href="resume.html">Business Experience</a>
+            <a class="block" href="about.html">About & Contact</a>
+            <a class="block" href="photos.html">Photo Gallery</a>
+            <a class="block" href="sounds.html">Sounds of Ben</a>
+        </div>
+        
+    <h1 class="center panel">Sounds of Ben</h1>
+    <div class="panel">
+        Everywhere I go, I hear the sounds... If you wish to share in my burden, explore the image below.
+    </div>
+    <div class="panel" style="height: 550px; background-image: url('static/sprites/trumpet-boy.jpg'); background-size: cover; background-position: center;">
+        <div class="sound-button" style="width: 230px; height: 140px; top: 120px; left: 35px;">
+            <!-- <audio><source src="static/sounds/say-hello-to-my-little-friend.mp3" type="audio/mpeg"></audio> -->
+            <audio><source src="static/sounds/its-big-brain-time-markiplier.mp3" type="audio/mpeg"></audio>
+            <!-- <audio><source src="static/sounds/say-my-name.mp3" type="audio/mpeg"></audio> -->
+            <!-- <audio><source src="static/sounds/wololo.mp3" type="audio/mpeg"></audio> -->
+        </div>
+        <div class="sound-button" style="width: 150px; height: 230px; top: 290px; left: 70px;">
+            <audio><source src="static/sounds/emotional-damage-meme.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width:  90px; height: 230px; top: 290px; left: 360px;">
+            <audio><source src="static/sounds/yee.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width: 150px; height: 220px; top: 310px; left: 475px;">
+            <audio><source src="static/sounds/now-thats-a-lot-of-damage.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width: 130px; height: 250px; top: 280px; left: 680px;">
+            <audio><source src="static/sounds/oh-hell-no_aQX7VTp.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width: 120px; height: 280px; top: 250px; left: 810px;">
+            <audio><source src="static/sounds/wow-anime-voice-accent.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width: 180px; height: 210px; top:  25px; left: 690px;">
+            <audio><source src="static/sounds/doot-doot-1.mp3" type="audio/mpeg"></audio>
+            <audio><source src="static/sounds/doot-doot-2.mp3" type="audio/mpeg"></audio>
+            <audio><source src="static/sounds/doot-doot-3.mp3" type="audio/mpeg"></audio>
+            <audio><source src="static/sounds/doot-doot-4.mp3" type="audio/mpeg"></audio>
+            <audio><source src="static/sounds/doot-doot-5.mp3" type="audio/mpeg"></audio>
+            <audio><source src="static/sounds/doot-doot-6.mp3" type="audio/mpeg"></audio>
+            <audio><source src="static/sounds/doot-me-up-inside.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width: 210px; height: 230px; top:  30px; left: 400px;">
+            <audio><source src="static/sounds/why-is-it-spicy.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="sound-button" style="width: 30px; height: 30px; top:  175px; left: 295px;">
+            <audio><source src="static/sounds/not-the-bees.mp3" type="audio/mpeg"></audio>
+        </div>
+    </div>
+
+        <div id="footer" class="panel">
+    <div class="flexrowcenter" style="height: 32px; margin-bottom: 10px;">
+        <a class="block" href="https://github.com/ben-githubs"><img class="link" src="static/sprites/github-logo.png"><span>GitHub</span></a>
+        <a class="block" href="https://www.linkedin.com/in/ben-airey-569087236/"><img class="link" src="static/sprites/linkedin-logo.png"><span>LinkedIn</span></a>
+        <a class="block" href="mailto:benjaminjohnairey@gmail.com"><img class="link" src="static/sprites/email.png"><span>Email Me</span></a>
+    </div>
+    Copyright Ben Airey 2025. Cool retro background from <a href="https://wallpapers.com/background/retro-90s-background-upd2wxyzhk9g2eds.html">Wallpapers.com</a>.
+</div>
+    </div>
+    
+    <script>
+        document.querySelectorAll(".sound-button").forEach(button => {
+            button.addEventListener("click", () => {
+                // Get all audio elements in this button
+                const audioElements = button.querySelectorAll("audio");
+                if (audioElements.length > 0) {
+                    // Select a random audio element and play it
+                    const randomIndex = Math.floor(Math.random() * audioElements.length);
+                    audioElements[randomIndex].play();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

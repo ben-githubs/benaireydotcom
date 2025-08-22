@@ -1,0 +1,233 @@
+html {
+    background-image: url("sprites/retro-90s-background.webp");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    /* For mobile phones */
+    .profile-row {
+        flex-direction: column;
+    }
+
+    body img.profile-pic {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    body div.navbar {
+        flex-flow: column nowrap;
+    }
+
+    body div.navbar a.block {
+        width: 100%;
+    }
+}
+
+body {
+    width: 100%;
+    color: snow;
+    margin: 0;
+}
+
+.centre {
+    width: 100%;
+    text-align: center;
+}
+
+img.profile-pic {
+    width: 512px;
+    height: auto;
+    display: block;
+    padding-right: 10px;
+}
+
+div#footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+
+div.flexrowcenter {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.panel {
+    box-sizing: border-box;
+    background-color: midnightblue;
+    border-color: royalblue;
+    border-style: groove;
+    padding: 8px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.grid-3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-3 .panel{
+    width: 33%;
+}
+
+.panel-stamp {
+    /* Something to display in bottom-left of a panel */
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+div.profile-row {
+    display: flex
+}
+
+div.navigation {
+    flex-grow: 1
+}
+
+div.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+div.navtable {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+    justify-content: space-between;
+}
+
+a.block {
+    display: flex;
+    padding: 4px;
+    border-style: outset;
+    background-color: royalblue;
+    border-color: skyblue;
+    align-items: center;
+    margin-left: 4px;
+    margin-right: 4px;
+    text-decoration-line: none;
+}
+
+a.block:hover {
+    color: snow;
+    border-style: inset;
+}
+
+a.block:active {
+    background-color: cornflowerblue;
+}
+
+a.block:visited {
+    color: snow;
+}
+
+img.link {
+    width: 24px;
+}
+
+a.block span {
+    margin-left: 4px;
+}
+
+div.navtable div {
+    min-width: 100px;
+    flex-grow: 1;
+    width: 33%;
+}
+
+a {
+    color: snow;
+}
+
+a:hover {
+    color: greenyellow
+}
+
+a:active {
+    color: darkgreen;
+}
+
+a:visited {
+    color: crimson;
+}
+
+div.navigation a {
+    color: snow;
+    text-decoration-line: none;
+}
+
+div.navigation a:hover {
+    text-decoration-line: underline;
+}
+
+div.navigation a:active {
+    color: blue;
+}
+
+.rainbow-text {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+    font-family: "Comic Sans MS", "Comic Sans"
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+
+.sound-button {
+    position: absolute;
+}
+
+.sound-button:hover {
+    border: 1px solid grey;
+}
+
+.photo-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.photo-panel {
+    width: 33%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.photo-panel img {
+    width: 100%;
+    height: auto;
+    padding: 3px 0 4px 0;
+}

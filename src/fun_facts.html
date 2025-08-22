@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/main.css">
+    
+    <link rel="stylesheet" href="static/modals.css">
+    <link rel="stylesheet" href="static/neuralyzer.css">
+
+    <script>
+        function neuralyze() {
+            document.getElementById('neuralyzer').classList.add('neuralyzer');
+            document.getElementById('neuralyzer-flash').classList.add('neuralyzer-flash');
+            setTimeout(() => window.location.href = "index.html", 1250);
+            
+        }
+        function display_second_modal() {
+            document.getElementById('popup1').style.display = "none";
+            document.getElementById('popup2').style.display = "block";
+            
+        }
+
+        function close_window() {
+            document.getElementById('popup').remove();
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="navbar panel">
+            <a class="block" href="index.html">Homepage</a>
+            <a class="block" href="fun_facts.html">Fun Ben Facts</a>
+            <a class="block" href="portfolio.html">Ben's Portfolio</a>
+            <a class="block" href="resume.html">Business Experience</a>
+            <a class="block" href="about.html">About & Contact</a>
+            <a class="block" href="photos.html">Photo Gallery</a>
+            <a class="block" href="sounds.html">Sounds of Ben</a>
+        </div>
+        
+    <h1 class="center panel">Top 10 Facts About Ben</h1>
+    <div class="panel">
+        Ben graduated from Oxford University with honors. He was the institutions first-ever graduate.
+    </div>
+    <div class="panel">
+        Ben single-handedly rebuild the Taj Mahal after it's unfortunate collapse in 2009.
+    </div>
+    <div class="panel">
+        Ben is the unrecognized leader of 37 UN nations.
+    </div>
+    <div class="panel">
+        Ben was asked to succeed Pope Jean Paul II, but couldn't attend the ceremony due to a birthday party, and had to conceed the position to Pope Benedict XVI.
+    </div>
+    <div class="panel">
+        Ben once discovered the secret of life. He wrote it down, but forgot to add comments, and now he no longer remembers how it works.
+    </div>
+    <div class="panel">
+        Ben was voted "most likely to be an immortal" in the graduating class of 1132.
+    </div>
+    <div class="panel">
+        Ben earned international notoriety after publicly losing to God in a game of connect four. A rematch is pending.
+    </div>
+    <div class="panel">
+        Ben once held an opponent's wife's hand in a jar of acid... at a party.
+    </div>
+    <div class="panel">
+        Ben spent a summer in 2011 interning as a leprechaun, but left after learning the position had no upward mobility.
+    </div>
+    <div class="panel">
+        Ben invented colour.
+    </div>
+
+        <div id="footer" class="panel">
+    <div class="flexrowcenter" style="height: 32px; margin-bottom: 10px;">
+        <a class="block" href="https://github.com/ben-githubs"><img class="link" src="static/sprites/github-logo.png"><span>GitHub</span></a>
+        <a class="block" href="https://www.linkedin.com/in/ben-airey-569087236/"><img class="link" src="static/sprites/linkedin-logo.png"><span>LinkedIn</span></a>
+        <a class="block" href="mailto:benjaminjohnairey@gmail.com"><img class="link" src="static/sprites/email.png"><span>Email Me</span></a>
+    </div>
+    Copyright Ben Airey 2025. Cool retro background from <a href="https://wallpapers.com/background/retro-90s-background-upd2wxyzhk9g2eds.html">Wallpapers.com</a>.
+</div>
+    </div>
+    
+    <div class="modal-filter" id="popup">
+        <div id="popup1" class="modal-window">
+            <span class="modal-window-handle">Hey! Listen!</span>
+            <div class="modal-content">
+                WARNING: The information on the following page is heavly disputed by all. Do you understand?<br/>
+                <div class="flexrowcenter" style="justify-content: space-around">
+                    <div class="modal-button" onclick="close_window()">
+                        Yes
+                    </div>
+                    <div class="modal-button" onclick="display_second_modal()">
+                        No
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="popup2" class="modal-window" style="display: none;">
+            <span class="modal-window-handle">Hey! Listen!</span>
+            <div class="modal-content">
+                In that case, we will need to erase your memory.<br/>
+                <div class="flexrowcenter" style="justify-content: space-around">
+                    <div class="modal-button" onclick="neuralyze()">
+                        Okay
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="neuralyzer"></div>
+    <div id="neuralyzer-flash"></div>
+
+</body>
+</html>

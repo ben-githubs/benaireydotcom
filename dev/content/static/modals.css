@@ -1,0 +1,52 @@
+div.modal-window {
+    width: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40%;
+
+    background-color: lightgray;
+    border-style: outset;
+    box-shadow: black 6px 6px;
+}
+
+div.modal-filter {
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+span.modal-window-handle {
+    width: 100%;
+    display: block;
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+div.modal-content {
+    border-style: inset;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    color: black;
+    padding: 4px;
+}
+
+div.modal-button {
+    border-style: outset;
+    height: 24px;
+    text-align: center;
+    width: 120px;
+}
+
+div.modal-button:hover {
+    border-style: inset;
+}

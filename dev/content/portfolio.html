@@ -1,0 +1,40 @@
+{% extends "basic_content.jinja2" %}
+
+{% block content %}
+    <h1 class="center panel">Ben's Portfolio</h1>
+
+    <div class="grid-3">
+        <div class="panel">
+            <h2>The DM Toolkit</h2>
+            <p>
+                The one-stop-shop for DMs during combat encounters.
+            </p>
+            <a href="https://github.com/ben-githubs/dmtoolkit">View on GitHub</a>
+        </div>
+
+        <div class="panel">
+            <h2>sscomp</h2>
+            <p>
+                A super basic tool that compiles Jinja templates into static websites. It's what I used to make this site!
+            </p>
+            <a href="https://github.com/ben-githubs/sscomp">View on GitHub</a>
+        </div>
+
+        <div class="panel">
+            <h2>archiver</h2>
+            <p>
+                Easily create zip archives from files in multiple directories. Supports .gitignore style exclusions, too!
+            </p>
+            <a href="https://github.com/ben-githubs/archiver">View on GitHub</a>
+        </div>
+    </div>
+    <div class="grid-3" style="justify-content: left;">
+        <div class="panel">
+            <h2>bardcore</h2>
+            <p>
+                Another D&D tool, this one is a kind of track mixer for ambient sounds.
+            </p>
+            <a href="https://github.com/ben-githubs/bardcore">View on GitHub</a>
+        </div>
+    </div>
+{% endblock %}

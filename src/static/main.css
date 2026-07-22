@@ -2,6 +2,7 @@ html {
     background-image: url("sprites/retro-90s-background.webp");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 100%;
 }
 
@@ -73,6 +74,18 @@ div.content {
     padding: 8px;
     position: relative;
     margin-bottom: 8px;
+}
+
+.experience {
+    width: 100%;
+}
+
+.experience:nth-child(even) .panel {
+    margin-left: auto;
+}
+
+.experience .panel {
+    width: 75%;
 }
 
 .grid-3 {
@@ -230,4 +243,15 @@ div.navigation a:active {
     width: 100%;
     height: auto;
     padding: 3px 0 4px 0;
+}
+
+.quote {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    font-family: 'Playwrite NZ', cursive;
 }

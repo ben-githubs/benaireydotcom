@@ -3,6 +3,7 @@ html {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    font-family: "Georgia", serif;
     height: 100%;
 }
 

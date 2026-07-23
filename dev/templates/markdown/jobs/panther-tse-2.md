@@ -1,7 +1,7 @@
 
 ## Technical Support Engineer Lv. 2
 
-### Panther Labs (May 2023 - Feb 2024)
+### Panther Labs (May 2023 - January 2024)
 
 In addition to the duties and responsibilities of TSE I, in this position I also took an active role in supporting and supervising the junior TSEs.
 

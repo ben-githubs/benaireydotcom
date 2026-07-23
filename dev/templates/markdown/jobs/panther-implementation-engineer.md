@@ -1,7 +1,7 @@
 
 ## Implementation Engineer
 
-### Panther Labs (November 2023 - July 2024)
+### Panther Labs (January 2024 - July 2024)
 
 In the months leading up to Nov 2024, myself and my grand-manager Curtis were tasked with standing up a Professional Services team at Panther. The team would provide onboarding services for new customers, and ad-hoc professional services for existing customers. Nobody had ever undertaken this task at Panther before, and we were chosen to build out this new function.
 
